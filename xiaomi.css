@@ -1,0 +1,735 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/* 顶部广告 */
+.header {
+    width: 100%;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header img {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* 顶部广告结束 */
+
+/*黑色导航栏开始*/
+.black_nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    line-height: 40px;
+}
+
+.black_nav a {
+    color: #b0b0b0;
+}
+
+.black_nav_ul_left {
+    float: left;
+}
+
+.black_nav_ul_right {
+    float: right;
+}
+
+.black_nav_ul_left li {
+    float: left;
+    padding: 0 8px;
+    position: relative;
+}
+
+.black_nav_ul_right li {
+    padding: 0 8px;
+    float: left;
+}
+
+.black_nav_ul_left li:hover > a, .black_nav_ul_right li:hover > a {
+    color: #fff;
+}
+
+.meinv-img img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.meinv-img p {
+    position: relative;
+    top: -14px;
+}
+
+.black_nav_ul_left li:hover .meinv-img {
+    height: 150px;
+    box-shadow: 0 1px 10px 1px #999;
+}
+
+.meinv-img {
+    position: absolute;
+    left: -23px;
+    background-color: white;
+    width: 120px;
+    height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.black_nav_ul_right li:hover .gouwuche-box {
+    height: 80px;
+    box-shadow: 0 2px 10px 1px #999;
+}
+
+.gouwuche:hover {
+    background-color: white;
+    color: orange;
+}
+
+.gouwuche-box {
+    width: 250px;
+    height: 0;
+    transform: translateX(-70%);
+    background-color: #fff;
+    position: absolute;
+    line-height: 80px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+/*黑色导航栏结束*/
+/*白色导航开始*/
+.white_nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.white_nav a {
+    color: #333333;
+}
+
+.white_nav_list {
+    margin: 0 50px;
+}
+
+.white_nav_list li {
+    float: left;
+    padding: 0 10px;
+}
+
+.white_nav_list li:hover a {
+    color: orange;
+}
+
+.white_nav_box img {
+    border-right: 1px solid #b0b0b0;
+    height: 100px;
+}
+
+.white_nav_box ul li:last-child img {
+    border-right: 0;
+}
+
+.white_nav_list li:hover .white_nav_box {
+    height: 170px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #b0b0b0;
+}
+
+.white_nav_box {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    line-height: 20px;
+    z-index: 11;
+}
+
+.white_nav_box p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.white_nav_box span {
+    font-size: 12px;
+    color: orange;
+}
+
+.input_search {
+    float: right;
+}
+
+.input_search input {
+    margin-top: 22px;
+    float: left;
+    height: 35px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-right: 0;
+    border: 1px solid #b0b0b0;
+    outline: none;
+}
+
+.input_search button {
+    margin-top: 22px;
+    float: left;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #b0b0b0;
+}
+
+.input_search button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.white_nav_logo img {
+    position: absolute;
+    left: -6px;
+    top: -5px;
+    height: 70px;
+    width: 70px;
+}
+
+.white_nav_logo {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 58px;
+    width: 58px;
+    transition: all 0.5s ease;
+    margin-right: 10px;
+}
+
+.white_nav_logo:hover {
+    border-radius: 50%;
+}
+
+/*白色导航结束*/
+/*banner开始*/
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+
+.banner-img {
+    width: 1012px;
+    height: 460px;
+    overflow: hidden;
+    background-size: 1012px 460px;
+    animation: banner-background 20s ease-in-out infinite;
+}
+
+@keyframes banner-background {
+    0% {
+        background-image: url("images/banner-imgs.jpg");
+    }
+    20% {
+        background-image: url("images/banner-imgs2.jpg");
+    }
+    40% {
+        background-image: url("images/banner-imgs2.jpg");
+    }
+    60% {
+        background-image: url("images/banner-imgs3.jpg");
+    }
+    80% {
+        background-image: url("images/banner-imgs3.jpg");
+    }
+    100% {
+        background-image: url("images/banner-imgs.jpg");
+    }
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.banner-list {
+    width: 200px;
+    height: 440px;
+    padding-top: 20px;
+    position: absolute;
+    left: 340px;
+    line-height: 40px;
+    background-color: rgba(105, 101, 101, .6);
+    color: #fff;
+    z-index: 10;
+}
+
+.banner-list li {
+    height: 40px;
+}
+
+.banner-list > ul > li:hover {
+    background-color: #ff6700;
+    color: white;
+}
+
+.banner-list li:hover .banner-box {
+    height: 460px;
+    box-shadow: 0 0 5px 2px rgba(105, 101, 101, .6);
+}
+
+.banner-list p {
+    float: left;
+    padding-left: 20px;
+}
+
+.banner-list span {
+    float: right;
+    padding-right: 15px;
+}
+
+.banner-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.banner-box {
+    position: absolute;
+    left: 200px;
+    width: 812px;
+    height: 0;
+    top: 0;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+}
+
+.banner-box p {
+    color: #000;
+    padding-left: 10px;
+}
+
+.banner-box li {
+    float: left;
+    width: 270px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.banner-box li:hover p {
+    color: #ff6700;
+}
+
+.banner-box img {
+    padding-left: 20px;
+    float: left;
+}
+
+/*banner结束*/
+
+/*广告卡开始*/
+.ad-card-box {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    clear: both;
+    background-color: white;
+}
+
+.warp {
+    width: 1012px;
+}
+
+.ad-card1 img, .ad-card2 img, .ad-card3 img {
+    width: 100%;
+}
+
+.ad-list {
+    display: flex;
+    background-color: #5f5750;
+    color: #b0b0b0;
+    width: 230px;
+    height: 132px;
+    position: absolute;
+}
+
+.ad-list a {
+    color: #b0b0b0;
+}
+
+.ad-list li {
+    padding-top: 10px;
+    width: 76px;
+    height: 66px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.ad-list li:hover {
+    color: #fff;
+}
+
+.ad-list li:hover a {
+    color: #fff;
+}
+
+.ad-card1 {
+    left: 0;
+    position: absolute;
+    width: 245px;
+    height: 132px;
+    margin-left: 15px;
+}
+
+.ad-card2 {
+    left: 260px;
+    position: absolute;
+    width: 245px;
+    height: 132px;
+    margin-left: 15px;
+}
+
+.ad-card3 {
+    left: 520px;
+    position: absolute;
+    width: 245px;
+    height: 132px;
+    margin-left: 15px;
+}
+
+.ad-list span {
+    font-size: 26px;
+    padding: 0 10px;
+    margin: 0 17px;
+}
+
+.ad-list a {
+    font-size: 14px;
+    width: 40px;
+}
+
+.ad-box {
+    width: 100%;
+    position: relative;
+    float: left;
+
+}
+
+.ad-card-list {
+    position: absolute;
+    left: 230px;
+}
+
+/*广告卡结束*/
+/*手机展示开始*/
+.subject {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    height: auto;
+}
+
+
+.title {
+    height: 40px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 40px;
+    position: absolute;
+    float: left;
+    margin:20px 0;
+}
+
+.phone-box {
+    height: 696px;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+
+.phone-box-left {
+    position: absolute;
+    float: left;
+    margin-top: 80px;
+    transition: all 0.5s;
+}
+
+.phone-box-left img {
+    width: 234px;
+    height: 614px;
+}
+
+.phone-box-right {
+    position: absolute;
+    margin-top: 80px;
+    left: 234px;
+    width: 778px;
+    height: 614px;
+}
+
+.phone-box-right img {
+    width: 160px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.phone-box-right li {
+    background-color: white;
+    width: 153px;
+    height: 266px;
+    float: left;
+    padding: 15px 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.phone-box-right a > span {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+.phone-box-right p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #b0b0b0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.phone-box-right .phone-price {
+    font-size: 13px;
+    color: #ff6700;
+}
+
+.phone-box-right li:hover {
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 2px 15px 2px #b0b0b0;
+}
+
+.phone-box-left:hover {
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 2px 15px 2px #b0b0b0;
+}
+/*手机展示结束*/
+/*家电展示开始*/
+.jiadian-box{
+    height: 694px;
+    position: relative;
+    overflow: hidden;
+}
+.jiadian-list{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.jiadian-list li{
+    margin-left: 36px;
+    position: relative;
+}
+.jiadian-list li:first-child,.jiadian-list li:nth-child(6){
+    margin-left: 0;
+}
+.jiadian-list li:first-child img,.jiadian-list li:nth-child(6) img{
+    width: 173px;
+    height: 296px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.jiadian-list li:nth-child(10),.jiadian-list li:last-child{
+    height: 140px;
+    width: 173px;
+    padding: 0;
+}
+.jiadian-list li:nth-child(10) img,.jiadian-list li:last-child img{
+    height: 140px;
+    width: 173px;
+    margin: 0;
+}
+/*家电展示结束*/
+
+/*视频介绍开始*/
+.shiping-box{
+    height: 380px;
+    width: 1012px;
+    position: relative;
+}
+.shiping-list{
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    position: absolute;
+}
+.shiping-list li{
+    height: 300px;
+    margin-left: 11px;
+    float: left;
+    background-color: white;
+    transition: all 0.5s;
+}
+.shiping-list li:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 2px 15px 2px #b0b0b0;
+}
+.shiping-list li:first-child{
+    margin-left: 0;
+}
+.shiping-list img{
+    height: 200px;
+    width: 244px;
+}
+.shiping-img{
+    height: 200px;
+    width: 244px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.shiping-img button{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    border-color: #b0b0b0;
+    border-radius: 15px;
+    width: 40px;
+    height: 25px;
+    padding-left: 5px;
+    color: #b0b0b0;
+}
+.shiping-list li:hover button{
+    border-color: #ff6700;
+    color: #ff6700;
+}
+.shiping-list span{
+    font-size: 16px;
+    color: black;
+}
+.shiping-list p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5f5750;
+}
+/*视频介绍结束*/
+
+/*底部开始*/
+.footer{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+.footer-top-list{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.footer-top-list li{
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    width: 20%;
+    height: 75px;
+    position: relative;
+    padding: 0 55px;
+    box-sizing: border-box;
+}
+.footer-top-list li:last-child{
+    border-right: none;
+}
+.footer-top-list li span{
+    font-size: 26px;
+    color: #b0b0b0;
+    float: left;
+}
+.footer-top-list li p{
+    font-size: 14px;
+    color: #b0b0b0;
+    float: right;
+}
+.footer-top-list li:hover span,.footer-top-list li:hover p{
+    color: #ff6700;
+}
+.footer-bottom{
+    width: 100%;
+    display: flex;
+}
+.footer-bottom-left{
+    width: 70%;
+}
+.footer-bottom-left ul{
+    width: 20%;
+    float: left;
+}
+.footer-bottom-left ul li:first-child{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    color: #5f5750;
+}
+.footer-bottom-left ul li{
+    width: 100%;
+    height: 16px;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 10px 0;
+}
+.footer-bottom-left ul li:hover{
+    color: #ff6700;
+}
+.footer-bottom-right{
+    width: 30%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tel{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #ff6700;
+    font-size: 26px;
+}
+.time{
+    font-size: 14px;
+    color: #b0b0b0;
+}
+.kefu{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    color: #ff6700;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #ff6700;
+}
+.kefu:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+/*底部结束*/
